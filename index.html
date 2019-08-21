@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Video showing on page load one time with use of sessionStorage</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<p>Please note : This video is showing one time at the time of page load with use of sessionStorage. When user click on cancel button video will be remove and make a clone of video block. If user click on red button then video block will be visible.</p>
+<p style = "color:red;">This program could be used for entire website</p>
+
+<div class="video-wrap" style="display: none;">
+  <div class="video-index">
+    <div class="videomove">
+      <div id="can-vd2"><i class="fa fa-close" aria-hidden="true" style="text-shadow: 2px 2px #000;"></i></div>
+      <iframe id="liveembed" width="300" height="250" src="https://www.youtube.com/embed/OfIQW6s1-ew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<div id="livebtbox" style="display:none;">
+  <div id="livedrag">    
+    <div id="live-bt">
+      <a>Div show</a>
+    </div>
+    <div id="cripple" class="circle-rippl"></div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
