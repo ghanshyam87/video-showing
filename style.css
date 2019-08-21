@@ -1,0 +1,157 @@
+@keyframes fade-in-up {
+0% {
+opacity:0
+}
+
+100% {
+transform:translateY(0);
+opacity:1
+}
+}
+
+@-webkit-keyframes ripple {
+70% {
+box-shadow:0 0 0 50px rgba(255,0,0,0)
+}
+
+100% {
+box-shadow:0 0 0 0 rgba(255,0,0,0)
+}
+}
+
+@keyframes ripple {
+70% {
+box-shadow:0 0 0 50px rgba(255,0,231,0)
+}
+
+100% {
+box-shadow:0 0 0 0 rgba(255,0,0,0)
+}
+}
+
+@-moz-keyframes ripple {
+70% {
+box-shadow:0 0 0 50px rgba(255,0,0,0)
+}
+
+100% {
+box-shadow:0 0 0 0 rgba(255,0,0,0)
+}
+}
+
+.fa-close::before {
+content:"\f00d"
+}
+
+.video-wrap {
+text-align:center
+}
+
+.video-index iframe {
+max-width:100%;
+max-height:100%
+}
+
+.video-index {
+position:fixed;
+bottom:10px;
+right:10px;
+z-index:99999
+}
+
+#livebtbox {
+position:fixed;
+bottom:150px;
+right:100px;
+display:none;
+z-index:99999
+}
+
+#livedrag {
+position:absolute
+}
+
+#live-bt {
+height:60px;
+width:60px;
+border-radius:50%;
+background-color:#f13030;
+color:#FFF;
+box-shadow:2px 2px 5px #888;
+text-align:center;
+font-weight:700;
+margin:0 auto;
+font-size:12px;
+z-index:9999
+}
+
+#live-bt a {
+text-decoration:none;
+color:#FFF;
+font-size:11px;
+line-height:60px;
+font-family:'Roboto',sans-serif;
+font-weight:700;
+display:block;
+cursor:pointer
+}
+
+.circle-rippl,.circle-rippl::after,.circle-rippl::before {
+position:absolute;
+right:0;
+bottom:0;
+height:60px;
+width:60px;
+z-index:-1;
+border-radius:50%;
+box-shadow:0 0 0 0 rgba(255,0,0,.2);
+-webkit-animation:ripple 3s infinite;
+-moz-animation:ripple 3s infinite;
+-ms-animation:ripple 3s infinite;
+-o-animation:ripple 3s infinite;
+animation:ripple 3s infinite
+}
+
+.circle-rippl::after,.circle-rippl::before {
+content:"";
+position:absolute;
+top:0;
+right:0
+}
+
+.circle-rippl::after {
+-webkit-animation-delay:.6s;
+-moz-animation-delay:.6s;
+-ms-animation-delay:.6s;
+-o-animation-delay:.6s;
+animation-delay:.6s
+}
+
+.videomove {
+bottom:10px;
+right:10px;
+position:absolute;
+width:320px;
+height:240px;
+background:#000;
+border:1px solid #FFF;
+transform:translateY(100%);
+animation:fade-in-up .25s ease forwards;
+-webkit-box-shadow:0 0 12px -1px rgba(0,0,0,0.42);
+-moz-box-shadow:0 0 12px -1px rgba(0,0,0,0.42);
+box-shadow:0 0 12px -1px rgba(0,0,0,0.42);
+z-index:99
+}
+
+#can-vd2 {
+position:absolute;
+top:4px;
+left:4px;
+background:transparent;
+border:1px solid #575757;
+color:#FFF;
+font-size:16px;
+outline:none;
+padding:4px 8px;
+z-index:999999
+}
